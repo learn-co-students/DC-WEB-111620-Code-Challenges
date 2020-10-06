@@ -22,7 +22,7 @@ Before **every challenge**, clone down this repo using the `git clone` command a
 
 Create and checkout a new branch using your first and last name: `git checkout -b bartelby-cumberbuttons`
 
-Make an empty commit with the following command: `git commit --allow-empty`
+Make an empty commit with the following command: `git commit --allow-empty -m "Hi there"`
 
 Push your branch: `git push origin bartelby-cumberbuttons`
 
@@ -58,5 +58,7 @@ Clean up/delete all branches except main/master.
 Put your grades in Canvas.
 
 Change collaborator access if you wish (optional).
+
+If you wish, remove the code challenge from the repo. If you keep old challenges in, please name the directories simply, e.g. "Phase-1-Code-Challenge-NameOfChallenge".
 
 Thank you for your hard work!
