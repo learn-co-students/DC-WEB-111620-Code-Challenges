@@ -1,0 +1,19 @@
+name: Add Collaborators
+on:
+  watch:
+    types: [started]
+
+jobs:
+  add_collaborator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: octokit/request-action@v2.x
+        id: add_collaborator
+        with:
+          route: PUT /repos/{repo-owner}/{repo-name}/collaborators/{username}
+          repo-owner: ${{ github.repository_owner }}
+          repo-name: ${{ github.event.repository.name }}
+          username: ${{ github.actor }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.ADD_COLLABORATOR }}
+
