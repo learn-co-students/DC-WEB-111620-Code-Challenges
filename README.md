@@ -22,8 +22,6 @@ Before **every challenge**, clone down this repo using the `git clone` command a
 
 Create and checkout a new branch using your first and last name: `git checkout -b bartelby-cumberbuttons`
 
-Make an empty commit with the following command: `git commit --allow-empty -m "Hi there"`
-
 Push your branch: `git push origin bartelby-cumberbuttons`
 
 Your instructor will confirm that your branch was pushed successfully. Once all branches appear, your instructor will ask you to start work on the challenge.
