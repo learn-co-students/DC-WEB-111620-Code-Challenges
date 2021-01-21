@@ -1,0 +1,101 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #404040;
+}
+
+header {
+  float: left;
+  width: 225px;
+  height: auto;
+  border-right: solid #404040 1px;
+  border-bottom: solid #404040 1px;
+  border-radius: 0 0 6px 0;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 52px;
+  color: #3493d5;
+  margin: 10px 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+nav ul {
+  margin-left: 15px;
+}
+
+nav ul li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: #f1a458;
+  color: #fff;
+}
+
+main {
+  float: left;
+  margin-left: 50px;
+  width: 600px;
+}
+
+.beer-details h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.beer-details h3 {
+  font-size: 24px;
+}
+
+.beer-details img {
+  display: block;
+  height: 200px;
+  margin: 0 auto 25px auto;
+}
+
+.description, .review-form {
+  width: 450px;
+  margin: 0 auto 50px auto;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  border: 1px solid gray;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.description button, input[type="submit"] {
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #f1a458;
+  color: #fff;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.reviews li {
+  background-color: #fff3a9;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
