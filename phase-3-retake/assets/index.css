@@ -1,0 +1,50 @@
+body {
+    background-color:#EBEBEB;
+}
+
+.heading {
+    background-color: #333333;
+    margin-bottom: 20px;
+    padding: 5px 0px 5px 15px;
+}
+
+.title {
+    background-color: #333333;
+    padding: 5px;
+    color: white;
+}
+
+#runtime {
+    background-color: #333333;
+    color: #3E8FDE;
+    padding: 0px 0px 5px 5px;
+}
+
+.content {
+    color: #3E8FDE;
+}
+
+#subtitle {
+    color: white;
+    margin-left: 55px;
+}
+
+#showing {
+    margin-left: 20px;
+}
+
+.film {
+    font-size: 20px;
+}
+
+.sold-out {
+    color: lightgray;
+}
+
+img {
+    max-width: 25vw;
+}
+
+#film-info {
+    padding-bottom: 15px;
+}
