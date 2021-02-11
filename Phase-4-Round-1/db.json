@@ -83,6 +83,34 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2021-02-26",
+      "description": "Flata-Beer",
+      "category": "Drank",
+      "amount": "8",
+      "id": 20
+    },
+    {
+      "date": "2021-02-19",
+      "description": "Flata-Beer",
+      "category": "Drank",
+      "amount": "5",
+      "id": 21
+    },
+    {
+      "date": "2021-02-13",
+      "description": "Flata-Pizza",
+      "category": "Food",
+      "amount": "13",
+      "id": 22
+    },
+    {
+      "date": "2021-02-13",
+      "description": "Torchy's Tacos ",
+      "category": "Food",
+      "amount": "3",
+      "id": 23
     }
   ]
 }
