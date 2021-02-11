@@ -85,13 +85,6 @@
       "amount": -975
     },
     {
-      "date": "2021-02-12",
-      "description": "New headphones",
-      "category": "Entertainment",
-      "amount": 50,
-      "id": 13
-    },
-    {
       "date": "2021-02-14",
       "description": "Groceries",
       "category": "Food",
@@ -106,18 +99,18 @@
       "id": 16
     },
     {
-      "date": "2021-02-21",
-      "description": "Movie Ticket",
-      "category": "Entertainment",
-      "amount": 10,
-      "id": 17
-    },
-    {
       "date": "2021-02-28",
       "description": "Concert Ticket",
       "category": "Entertainment",
       "amount": 50,
       "id": 18
+    },
+    {
+      "date": "2021-02-21",
+      "description": "Movie Ticket",
+      "category": "Entertainment",
+      "amount": 10,
+      "id": 19
     }
   ]
 }

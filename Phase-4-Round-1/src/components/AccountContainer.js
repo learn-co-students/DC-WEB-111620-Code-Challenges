@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import TransactionsList from "./TransactionsList";
 import Search from "./Search";
 import AddTransactionForm from "./AddTransactionForm";
-const URL = "http://localhost:6001/transactions/"
+import Sort from './Sort'
+const URL = "http://localhost:6001/transactions/";
 
 class AccountContainer extends Component {
 
   state = {
     transactions: [],
-    search: ""
+    search: "",
+    sort: ""
   }
 
   componentDidMount() {
@@ -37,9 +39,21 @@ class AccountContainer extends Component {
       }))
   }
 
+  handleSort =(e) => {
+    this.setState({
+      sort: e.target.id
+    })
+    const transactions = this.state.transactions
+    transactions.sort((a, b) => (a[e.target.id] > b[e.target.id]) ? 1 : -1)
+    this.setState({
+      transactions: transactions
+    })
+  }
+
   render() {
     return (
       <div>
+        <Sort handleSort={this.handleSort} sort={this.state.sort}/>
         <Search search={this.state.search} handleSearch={this.handleSearch}/>
         <AddTransactionForm addNewTransaction={this.addNewTransaction}/>
         <TransactionsList handleDelete={this.handleDelete} transactions={this.state.transactions.filter(transaction => transaction.description.toLowerCase().includes(this.state.search))}/>
@@ -47,5 +61,6 @@ class AccountContainer extends Component {
     );
   }
 }
+
 
 export default AccountContainer;
