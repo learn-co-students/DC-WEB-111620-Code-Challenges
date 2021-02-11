@@ -14,11 +14,16 @@ class AccountContainer extends Component {
       .then(r => r.json())
       .then(transactions => this.setState({transactions}))
   }
+
+  addTransaction = (transaction) => {
+    // console.log("added transaction",transaction)
+    this.setState({transactions:[...this.state.transactions, transaction]})
+  }
   render() {
     return (
       <div>
         <Search />
-        <AddTransactionForm />
+        <AddTransactionForm addTransaction={this.addTransaction}/>
         <TransactionsList transactions={this.state.transactions} />
       </div>
     );
