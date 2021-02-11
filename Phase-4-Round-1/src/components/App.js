@@ -4,7 +4,8 @@ import "../stylesheets/App.css";
 
 class App extends Component {
   state = {
-    transactions: []
+    transactions: [],
+    sort: "none"
   }
   
   componentDidMount() {
@@ -56,6 +57,22 @@ class App extends Component {
       })
     })
   }
+
+  sortTransactions = (sortTerm) => {
+      console.log(sortTerm)
+      this.setState({
+        sort: sortTerm
+      })
+      if (sortTerm === "description") {
+        this.setState({
+          transactions: this.state.transactions.sort((a, b) => (a.description > b.description) ? 1 : -1)
+        })
+      } else if (sortTerm === "category") {
+        this.setState({
+          transactions: this.state.transactions.sort((a, b) => (a.category > b.category) ? 1 : -1)
+        })
+      }
+  }
   
   render() {
     return (
@@ -63,7 +80,7 @@ class App extends Component {
         <div className="ui segment violet inverted">
           <h2>The Royal Bank of Flatiron</h2>
         </div>
-        <AccountContainer deleteTransaction={this.deleteTransaction} filterTransactions={this.filterTransactions} addTransaction={this.addTransaction} transactions={this.state.transactions}/>
+        <AccountContainer sortTransactions={this.sortTransactions} deleteTransaction={this.deleteTransaction} filterTransactions={this.filterTransactions} addTransaction={this.addTransaction} transactions={this.state.transactions}/>
       </div>
     );
   }
