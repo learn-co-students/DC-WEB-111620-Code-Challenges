@@ -83,6 +83,13 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2021-02-11",
+      "description": "Cabo Bobs",
+      "category": "Food",
+      "amount": 10.85,
+      "id": 13
     }
   ]
 }
