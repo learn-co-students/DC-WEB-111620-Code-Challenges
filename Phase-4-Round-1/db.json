@@ -83,6 +83,27 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2021-02-10",
+      "description": "not the goat",
+      "category": "food",
+      "amount": "10",
+      "id": 13
+    },
+    {
+      "date": "2021-02-10",
+      "description": "GOAT",
+      "category": "food",
+      "amount": "10",
+      "id": 14
+    },
+    {
+      "date": "2021-02-03",
+      "description": "GOAT",
+      "category": "food",
+      "amount": "10",
+      "id": 15
     }
   ]
 }
