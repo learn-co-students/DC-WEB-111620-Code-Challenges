@@ -83,6 +83,34 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2021-02-11",
+      "description": "Starbucks Coffee",
+      "category": "Food",
+      "amount": "4.50",
+      "id": 13
+    },
+    {
+      "date": "2021-02-11",
+      "description": "more coffee",
+      "category": "Food",
+      "amount": "2.00",
+      "id": 14
+    },
+    {
+      "date": "2021-02-11",
+      "description": "Groceries",
+      "category": "Food",
+      "amount": "50.00",
+      "id": 15
+    },
+    {
+      "date": "2021-02-11",
+      "description": "Baby Gift",
+      "category": "Gift",
+      "amount": "50.00",
+      "id": 16
     }
   ]
 }
