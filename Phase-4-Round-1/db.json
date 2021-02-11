@@ -83,6 +83,118 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2021-02-01",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 13
+    },
+    {
+      "date": "2021-02-01",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 14
+    },
+    {
+      "date": "2021-02-27",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 15
+    },
+    {
+      "date": "2021-02-12",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 16
+    },
+    {
+      "date": "2021-02-12",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 17
+    },
+    {
+      "date": "2021-02-12",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 18
+    },
+    {
+      "date": "",
+      "description": "rent",
+      "category": "house",
+      "amount": 20,
+      "id": 19
+    },
+    {
+      "date": "",
+      "description": "rent",
+      "category": "house",
+      "amount": 20,
+      "id": 20
+    },
+    {
+      "date": "2021-02-24",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 21
+    },
+    {
+      "date": "2021-02-24",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 22
+    },
+    {
+      "date": "2021-02-24",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 23
+    },
+    {
+      "date": "2021-02-24",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 24
+    },
+    {
+      "date": "2021-02-24",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 25
+    },
+    {
+      "date": "2021-02-24",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 26
+    },
+    {
+      "date": "2021-02-24",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 27
+    },
+    {
+      "date": "2021-02-24",
+      "description": "rent",
+      "category": "house",
+      "amount": 750,
+      "id": 28
     }
   ]
 }
