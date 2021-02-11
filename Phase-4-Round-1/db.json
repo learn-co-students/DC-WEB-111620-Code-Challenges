@@ -83,6 +83,20 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2021-02-13",
+      "description": "delivers industrial packages",
+      "category": "hola",
+      "amount": "0.03",
+      "id": 13
+    },
+    {
+      "date": "2021-02-14",
+      "description": "FlatironSchool",
+      "category": "Study",
+      "amount": "0.06",
+      "id": 14
     }
   ]
 }
