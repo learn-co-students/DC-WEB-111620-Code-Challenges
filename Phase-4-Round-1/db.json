@@ -83,6 +83,97 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 13
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 14
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 15
+    },
+    {
+      "date": "2021-02-13",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 16
+    },
+    {
+      "date": "2021-02-05",
+      "description": "Weird as all heck",
+      "category": "Weird",
+      "amount": "950",
+      "id": 17
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 18
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 19
+    },
+    {
+      "date": "2021-02-13",
+      "description": "Cool man",
+      "category": "Weird",
+      "amount": "5",
+      "id": 20
+    },
+    {
+      "date": "2021-02-25",
+      "description": "Weird Stuff",
+      "category": "Craziness",
+      "amount": "10000",
+      "id": 21
+    },
+    {
+      "date": "2021-02-12",
+      "description": "Cool man",
+      "category": "Craziness",
+      "amount": "43",
+      "id": 22
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 23
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 24
+    },
+    {
+      "date": "2021-02-12",
+      "description": "Weird as all heck",
+      "category": "Craziness",
+      "amount": "4",
+      "id": 25
     }
   ]
 }
