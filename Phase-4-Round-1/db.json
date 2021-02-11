@@ -83,6 +83,34 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2021-02-12",
+      "description": "Valentine's Day Dinner",
+      "category": "Food",
+      "amount": "100",
+      "id": 13
+    },
+    {
+      "date": "2021-02-26",
+      "description": "Jacket, Nordstrom",
+      "category": "Fashion",
+      "amount": "55.99",
+      "id": 14
+    },
+    {
+      "date": "2021-02-12",
+      "description": "dinner",
+      "category": "food",
+      "amount": "20",
+      "id": 15
+    },
+    {
+      "date": "2021-02-04",
+      "description": "test",
+      "category": "test",
+      "amount": "-4",
+      "id": 16
     }
   ]
 }
