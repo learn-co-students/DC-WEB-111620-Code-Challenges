@@ -9,7 +9,7 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "json-server --watch db.json -p 6001 & open http://localhost:6001/transactions & PORT=6002 react-scripts start && fg",
+    "start": "json-server --watch db.json -p 3000 & open http://localhost:3000/transactions & PORT=3001 react-scripts start && fg",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
