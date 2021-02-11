@@ -29,12 +29,20 @@ class AccountContainer extends Component {
     })
   }
 
+  handleDelete = (deletedTransaction) => {
+    fetch(URL + deletedTransaction.id, {method: "DELETE"})
+      .then(r => r.json())
+      .then(() => this.setState({
+        transactions: this.state.transactions.filter(transaction => transaction !== deletedTransaction)
+      }))
+  }
+
   render() {
     return (
       <div>
         <Search search={this.state.search} handleSearch={this.handleSearch}/>
         <AddTransactionForm addNewTransaction={this.addNewTransaction}/>
-        <TransactionsList transactions={this.state.transactions.filter(transaction => transaction.description.toLowerCase().includes(this.state.search))}/>
+        <TransactionsList handleDelete={this.handleDelete} transactions={this.state.transactions.filter(transaction => transaction.description.toLowerCase().includes(this.state.search))}/>
       </div>
     );
   }
