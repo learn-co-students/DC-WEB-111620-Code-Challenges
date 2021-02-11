@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import AccountContainer from "./AccountContainer";
 import "../stylesheets/App.css";
 
-// hi whoever is reading this. no - i did not do advanced deliverables
+// hi whoever is reading this. i did not do advanced deliverables
 //because i dont want to mess up what i got.. haha. 
 //thanks for coming to my ted talk.
 
@@ -49,11 +49,6 @@ class App extends Component {
     e.target.reset()
   }
 
-  // addNewTrans = (newTransaction) =>
-  //   this.setState({
-  //     transactions: [...this.state.transactions, newTransaction]
-  //   })
-
   
 
   changeSearch = (text) => {
@@ -68,11 +63,11 @@ class App extends Component {
           <h2>The Royal Bank of Flatiron</h2>
         </div>
         <AccountContainer 
-        // transactions={this.state.transactions} 
+       
         transactions={filteredTransactions}
         handleSubmit={this.handleSubmit}
         changeSearch={this.changeSearch}
-        // addNewTrans={this.addNewTrans}
+        
         />
       </div>
     );

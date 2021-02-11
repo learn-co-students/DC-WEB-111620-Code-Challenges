@@ -85,54 +85,32 @@
       "amount": -975
     },
     {
-      "description": "ChickFilA",
+      "date": "2021-02-27",
+      "description": "chill's",
       "category": "Food",
-      "amount": "10.00",
-      "id": 13
-    },
-    {
-      "description": "ChickFilA",
-      "category": "Food",
-      "amount": "1.25",
-      "id": 14
-    },
-    {
-      "description": "ChickFilA",
-      "category": "Food",
-      "amount": "10.00",
+      "amount": "25.00",
       "id": 15
     },
     {
-      "description": "Chili's",
+      "date": "2021-02-18",
+      "description": "Cava",
       "category": "Food",
-      "amount": "25.00",
+      "amount": "12.00",
       "id": 16
     },
     {
-      "description": "chili's",
-      "category": "food",
-      "amount": "13",
+      "date": "2021-02-26",
+      "description": "Uber",
+      "category": "Transportation",
+      "amount": "15.00",
       "id": 17
     },
     {
+      "date": "2021-02-27",
       "description": "ChickFilA",
       "category": "Food",
-      "amount": "100",
+      "amount": "10.00",
       "id": 18
-    },
-    {
-      "date": "2021-02-25",
-      "description": "ChickFilA",
-      "category": "Food",
-      "amount": "200.00",
-      "id": 19
-    },
-    {
-      "date": "2021-02-13",
-      "description": "Pho-cking Good",
-      "category": "Pho",
-      "amount": "13.00",
-      "id": 20
     }
   ]
 }
