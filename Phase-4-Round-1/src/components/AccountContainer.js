@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import TransactionsList from "./TransactionsList";
 import Search from "./Search";
 import AddTransactionForm from "./AddTransactionForm";
+import Sort from "./Sort"
 
 const AccountContainer = () =>{
 
   const [transactions, setTransactions] = useState([])
   const [search, setSearch] = useState("")
+  const [sort, setSort] = useState("")
 
   useEffect(() => {
     async function fetchData() {
@@ -38,16 +40,47 @@ const AccountContainer = () =>{
   }
 
   const handleSearch = (event) => {
+    event.preventDefault();
     setSearch(event.target.value)
   }
+
+  const handleSort = (event) => {
+    event.preventDefault();
+    setSort(event.target.value)
+  }
   
-  const display = () => transactions.filter(transaction => transaction.description.toLowerCase().includes(search.toLowerCase()))
+  const display = () => {
+    let filterTransactions = transactions.filter(transaction => transaction.description.toLowerCase().includes(search.toLowerCase()))
+    if (sort === "category") {
+      filterTransactions = filterTransactions.sort((a,b) => a.category > b.category ? 1 : -1)
+    } else if (sort === "description") {
+      filterTransactions = filterTransactions.sort((a,b) => a.description > b.description ? 1 : -1)
+    } else if (sort === "date") {
+      filterTransactions = filterTransactions.sort((a,b) => a.date > b.date ? 1 : -1)
+    } else if (sort === "amount") {
+      filterTransactions = filterTransactions.sort((a,b) => a.amount > b.amount ? 1 : -1)
+    } 
+    return filterTransactions
+  }
+
+  const handleDelete = (deleteTransaction) => {
+    let question = window.confirm("Are you sure you want to delete?")
+    if (question === true) {
+      fetch(`http://localhost:6001/transactions/${deleteTransaction.id}`, {
+        method: "DELETE"
+      })
+      .then(res => res.json())
+      .then(setTransactions(transactions => transactions.filter(transaction => transaction !== deleteTransaction)))
+    }
+
+  }
 
   return (
       <div>
         <Search handleSearch={handleSearch}/>
+        <Sort handleSort={handleSort}/>
         <AddTransactionForm handleSubmit={handleSubmit}/>
-        <TransactionsList transactions={display()} />
+        <TransactionsList transactions={display()} handleDelete={handleDelete} />
       </div>
     );
 }

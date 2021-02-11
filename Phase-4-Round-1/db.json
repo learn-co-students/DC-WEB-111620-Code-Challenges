@@ -83,34 +83,6 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
-    },
-    {
-      "date": "2021-02-09",
-      "description": "Dead Note",
-      "category": "Movie",
-      "amount": "10",
-      "id": 13
-    },
-    {
-      "date": "2021-02-10",
-      "description": "Pad Thai ",
-      "category": "Food",
-      "amount": "20.30",
-      "id": 14
-    },
-    {
-      "date": "2021-02-05",
-      "description": "Costco",
-      "category": "Supermarket",
-      "amount": "120.4",
-      "id": 15
-    },
-    {
-      "date": "2021-02-05",
-      "description": "Monthly rent",
-      "category": "Housing",
-      "amount": "600",
-      "id": 16
     }
   ]
 }

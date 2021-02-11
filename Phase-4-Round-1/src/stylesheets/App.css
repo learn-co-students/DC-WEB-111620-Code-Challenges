@@ -25,3 +25,8 @@ body {
   padding: 20px;
   color: white;
 }
+
+.sort {
+  color: rgb(201, 82, 161);
+  padding: 10px;
+}
