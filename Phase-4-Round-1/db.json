@@ -83,6 +83,48 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2021-02-12",
+      "description": "New headphones",
+      "category": "Entertainment",
+      "amount": 50,
+      "id": 13
+    },
+    {
+      "date": "2021-02-13",
+      "description": "Foam Roller",
+      "category": "Fitness",
+      "amount": 15,
+      "id": 14
+    },
+    {
+      "date": "2021-02-14",
+      "description": "Groceries",
+      "category": "Food",
+      "amount": 100,
+      "id": 15
+    },
+    {
+      "date": "2021-02-13",
+      "description": "Museum Ticket",
+      "category": "Entertainment",
+      "amount": 12,
+      "id": 16
+    },
+    {
+      "date": "2021-02-21",
+      "description": "Movie Ticket",
+      "category": "Entertainment",
+      "amount": 10,
+      "id": 17
+    },
+    {
+      "date": "2021-02-28",
+      "description": "Concert Ticket",
+      "category": "Entertainment",
+      "amount": 50,
+      "id": 18
     }
   ]
 }
