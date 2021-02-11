@@ -17,9 +17,9 @@ class App extends Component {
     }))
   }
 
-  changeSearch = (text) => {
-    this.setState({searchText: text})
-  }
+    changeSearch = (text) => {
+      this.setState({searchText: text})
+    }
 
 
     createTrans =(newTrans) => {
@@ -46,7 +46,7 @@ class App extends Component {
 
   render() {
    const filteredTrans = this.state.trans.filter(trans => trans.description.toLowerCase().includes(this.state.searchText.toLowerCase()))
-   const filteredCategory =this.state.trans.filter(trans => trans.category.includes(this.state.searchText))
+  //  const filteredCategory =this.state.trans.filter(trans => trans.category.includes(this.state.searchText))
     return (
       <div className="ui raised segment">
         <div className="ui segment violet inverted">
@@ -58,7 +58,7 @@ class App extends Component {
         changeSearch={this.changeSearch}
         removeTrans={this.removeTrans}
         trans={filteredTrans}
-        trans={filteredCategory}
+        // trans={filteredCategory}
          />
       </div>
     );
