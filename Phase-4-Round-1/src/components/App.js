@@ -42,6 +42,20 @@ class App extends Component {
       })
     }
   }
+
+  deleteTransaction = (transID) => {
+    const reqPkg = {
+      method: "DELETE",
+      headers: {'Content-Type':'application/json'},
+    }
+    fetch(`http://localhost:6001/transactions/${transID}`,reqPkg)
+    .then(resp=>resp.json())
+    .then(()=>{
+      this.setState({
+        transactions: this.state.transactions.filter(trans=>trans.id!==transID)
+      })
+    })
+  }
   
   render() {
     return (
@@ -49,7 +63,7 @@ class App extends Component {
         <div className="ui segment violet inverted">
           <h2>The Royal Bank of Flatiron</h2>
         </div>
-        <AccountContainer filterTransactions={this.filterTransactions} addTransaction={this.addTransaction} transactions={this.state.transactions}/>
+        <AccountContainer deleteTransaction={this.deleteTransaction} filterTransactions={this.filterTransactions} addTransaction={this.addTransaction} transactions={this.state.transactions}/>
       </div>
     );
   }
