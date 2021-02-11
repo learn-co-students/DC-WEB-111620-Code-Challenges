@@ -15,10 +15,10 @@ const TransactionsList = (props) => {
             <h3 className="ui center aligned header">Date</h3>
           </th>
           <th>
-            <h3 className="ui center aligned header" onClick={()=>props.sortTransactions("description")}>Description</h3>
+            <h3 className="ui center aligned header" onClick={()=>props.sortTransactions("description")}>Description<img src={'https://iconarchive.com/download/i96074/iconsmind/outline/Filter-2.ico'}></img></h3>
           </th>
           <th>
-            <h3 className="ui center aligned header" onClick={()=>props.sortTransactions("category")}>Category</h3>
+            <h3 className="ui center aligned header" onClick={()=>props.sortTransactions("category")}>Category<img src={'https://iconarchive.com/download/i96074/iconsmind/outline/Filter-2.ico'}></img></h3>
           </th>
           <th>
             <h3 className="ui center aligned header">Amount</h3>
