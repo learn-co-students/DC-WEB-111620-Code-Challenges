@@ -1,6 +1,6 @@
 import React from "react";
 
-const Search = () => {
+const Search = (props) => {
   return (
     <div className="ui large fluid icon input">
       <input
