@@ -83,6 +83,56 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "description": "ChickFilA",
+      "category": "Food",
+      "amount": "10.00",
+      "id": 13
+    },
+    {
+      "description": "ChickFilA",
+      "category": "Food",
+      "amount": "1.25",
+      "id": 14
+    },
+    {
+      "description": "ChickFilA",
+      "category": "Food",
+      "amount": "10.00",
+      "id": 15
+    },
+    {
+      "description": "Chili's",
+      "category": "Food",
+      "amount": "25.00",
+      "id": 16
+    },
+    {
+      "description": "chili's",
+      "category": "food",
+      "amount": "13",
+      "id": 17
+    },
+    {
+      "description": "ChickFilA",
+      "category": "Food",
+      "amount": "100",
+      "id": 18
+    },
+    {
+      "date": "2021-02-25",
+      "description": "ChickFilA",
+      "category": "Food",
+      "amount": "200.00",
+      "id": 19
+    },
+    {
+      "date": "2021-02-13",
+      "description": "Pho-cking Good",
+      "category": "Pho",
+      "amount": "13.00",
+      "id": 20
     }
   ]
 }
