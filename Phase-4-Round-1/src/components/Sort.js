@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sort = ({sort, handleSort}) => {
     return (
-        <div>
+        <div style={{width: "400px", margin: "auto"}}>
             <label>Sort by:</label>
             <input type="radio" id="category" checked={sort === "category"} onChange={handleSort}/>
             <label for="category">Category</label>
