@@ -9,7 +9,7 @@ class AddTransactionForm extends Component {
     newAmou: 0
   }
 
-  handleSubmit(e){
+  handleSubmit = (e) => {
     e.preventDefault()
     
     const newTrans = {
@@ -24,16 +24,11 @@ class AddTransactionForm extends Component {
       reqPack.method = "POST"
       reqPack.body = JSON.stringify(newTrans)
 
-    this.setState({
-      newDate: "",
-      newDesc: "",
-      newCate: "",
-      newAmou: 0
-    })
-
     fetch("http://localhost:6001/transactions", reqPack)
       .then(r => r.json())
       .then(newTransaction => this.props.addTransaction(newTransaction))
+
+    e.target.reset()
   }
 
   render() {

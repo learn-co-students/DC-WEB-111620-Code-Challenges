@@ -97,20 +97,6 @@
       "category": "Food",
       "amount": "-15",
       "id": 14
-    },
-    {
-      "date": "2021-02-18",
-      "description": "Big Boy Job Paycheck",
-      "category": "Income",
-      "amount": "1850",
-      "id": 15
-    },
-    {
-      "date": "2021-02-12",
-      "description": "TEST",
-      "category": "TEST",
-      "amount": "1",
-      "id": 16
     }
   ]
 }
