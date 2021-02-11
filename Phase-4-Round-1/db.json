@@ -83,6 +83,34 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2021-02-12",
+      "description": "I bought 10,000 beans",
+      "category": "Food",
+      "amount": "-4000",
+      "id": 13
+    },
+    {
+      "date": "2021-02-12",
+      "description": "Five Guys",
+      "category": "Food",
+      "amount": "-15",
+      "id": 14
+    },
+    {
+      "date": "2021-02-18",
+      "description": "Big Boy Job Paycheck",
+      "category": "Income",
+      "amount": "1850",
+      "id": 15
+    },
+    {
+      "date": "2021-02-12",
+      "description": "TEST",
+      "category": "TEST",
+      "amount": "1",
+      "id": 16
     }
   ]
 }
