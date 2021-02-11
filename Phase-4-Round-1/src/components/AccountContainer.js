@@ -26,6 +26,13 @@ class AccountContainer extends Component {
     this.setState({searchText: text})
   }
 
+  removeTransaction = (transaction) => {
+    this.setState({
+      transactions: this.state.transaction.filter(oldTransaction => oldTransaction !== transaction)
+    })
+  }
+
+
   render() {
     const filteredTransactions = this.state.transactions.filter(transaction => transaction.description.toLowerCase().includes(this.state.searchText.toLowerCase()))
     return (
