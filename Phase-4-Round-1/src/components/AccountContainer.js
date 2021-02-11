@@ -24,14 +24,15 @@ class AccountContainer extends Component {
   theSearch = (search) => {
     this.setState({search})
   }
-  displayStocks = () => {
-  let displayStocks = this.state.allStocks.filter(stock=> stock.name.toLowerCase().includes(this.state.search))
+  
+  displaytransaction = () => {
+  let displaytransaction = this.state.transactions.filter(transaction=> transaction.category.toLowerCase().includes(this.state.search))
 }
 
   render() {
     return (
       <div>
-        <Search theSearch={}/>
+        <Search theSearch={this.theSearch}/>
         <AddTransactionForm addTransaction={this.addTransaction}/>
         <TransactionsList transactions={this.state.transactions} />
       </div>
