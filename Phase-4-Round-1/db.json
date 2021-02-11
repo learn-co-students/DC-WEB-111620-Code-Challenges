@@ -50,13 +50,6 @@
       "amount": 50
     },
     {
-      "id": 8,
-      "date": "2019-12-09",
-      "description": "Lyft Ride",
-      "category": "Transportation",
-      "amount": -13.25
-    },
-    {
       "id": 9,
       "date": "2019-12-11",
       "description": "Paycheck from Bob's Burgers",
