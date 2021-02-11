@@ -10,7 +10,7 @@ class AddTransactionForm extends Component {
   }
 
   handleChange = (event) => {
-    console.log("value", event.target.value)
+    console.log("value", event.target.name)
     this.setState({
       [event.target.name]: event.target.value
     })
@@ -34,7 +34,7 @@ class AddTransactionForm extends Component {
       body: JSON.stringify(newTrans)
     }
     
-    fetch("http://localhost:3000/transactions", reqPack)
+    fetch("http://localhost:6001/transactions", reqPack)
     .then((res) => res.json())
     .then(postedTransaction => {
       this.props.addTransaction(postedTransaction)
@@ -45,7 +45,7 @@ class AddTransactionForm extends Component {
   render() {
     return (
       <div className="ui segment">
-        <form className="ui form">
+        <form onSubmit={this.handleSubmit} className="ui form">
           <div className="inline fields">
             <input onChange={this.handleChange} type="date" name="date" />
             <input onChange={this.handleChange} type="text" name="description" placeholder="Description" />
@@ -57,7 +57,7 @@ class AddTransactionForm extends Component {
               step="0.01"
             />
           </div>
-          <button onSubmit={this.handleSubmit} className="ui button" type="submit">
+          <button  className="ui button" type="submit">
             Add Transaction
           </button>
         </form>

@@ -17,7 +17,7 @@ class AccountContainer extends Component {
 
   addTransaction = (transaction) => {
     this.setState({
-      transactions: [...this.setState.transactions, transaction]
+      transactions: [...this.state.transactions, transaction]
     })
 
   }
