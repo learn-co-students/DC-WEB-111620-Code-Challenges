@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-class AddTransactionForm extends Component {
-  render() {
+const AddTransactionForm = ({handleSubmit}) => {
+
     return (
       <div className="ui segment">
-        <form className="ui form">
+        <form className="ui form" onSubmit={handleSubmit}>
           <div className="inline fields">
             <input type="date" name="date" />
             <input type="text" name="description" placeholder="Description" />
@@ -22,7 +22,6 @@ class AddTransactionForm extends Component {
         </form>
       </div>
     );
-  }
 }
 
 export default AddTransactionForm;
