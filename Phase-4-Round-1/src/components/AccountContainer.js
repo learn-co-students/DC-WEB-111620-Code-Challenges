@@ -19,6 +19,14 @@ class AccountContainer extends Component {
     this.setState({transactions: [...this.state.transactions, newTransaction]})
   }
 
+  deleteTransaction = (id) => {
+    fetch(`http://localhost:6001/transactions/${id}`, {method: 'DELETE'})
+    let newTransactions = this.state.transactions.filter(transactions => transactions.id !== id)
+    this.setState({
+      transactions: newTransactions
+    })
+  }
+
   updateSearch = (search) => {
     this.setState({
       search: search
@@ -38,7 +46,7 @@ class AccountContainer extends Component {
       <div>
         <Search updateSearch={this.updateSearch} />
         <AddTransactionForm addNewTransaction={this.addNewTransaction} />
-        <TransactionsList transactions={this.displayTransactions()} />
+        <TransactionsList transactions={this.displayTransactions()} deleteTransaction={this.deleteTransaction} />
       </div>
     );
   }
