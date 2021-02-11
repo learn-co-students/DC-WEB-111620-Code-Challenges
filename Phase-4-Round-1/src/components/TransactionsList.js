@@ -1,22 +1,25 @@
 import React from "react";
 import Transaction from "./Transaction";
 
-const TransactionsList = () => {
+const TransactionsList = ({trans,removeTrans}) => {
+
+
+
   return (
     <table className="ui celled striped padded table">
       <tbody>
-        <tr>
+        <tr onClick={() => removeTrans(trans)}>
           <th>
-            <h3 className="ui center aligned header">Date</h3>
+            <h3 className="ui center aligned header">{trans.date}</h3>
           </th>
           <th>
-            <h3 className="ui center aligned header">Description</h3>
+            <h3 className="ui center aligned header">{trans.description}</h3>
           </th>
           <th>
-            <h3 className="ui center aligned header">Category</h3>
+            <h3 className="ui center aligned header">{trans.category}</h3>
           </th>
           <th>
-            <h3 className="ui center aligned header">Amount</h3>
+            <h3 className="ui center aligned header">{trans.mount}</h3>
           </th>
         </tr>
         {/* render Transactions here */}
